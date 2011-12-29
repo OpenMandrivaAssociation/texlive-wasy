@@ -17,8 +17,6 @@ BuildArch:	noarch
 BuildRequires:	texlive-tlpkg
 Requires(pre):	texlive-tlpkg
 Requires(post):	texlive-kpathsea
-Conflicts:	texlive-texmf <= 20110705-3
-Conflicts:	texlive-doc <= 20110705-3
 
 %description
 These are the wasy (Waldi symbol) fonts, second release. This
@@ -26,20 +24,12 @@ bundle presents the fonts in MetaFont format, but they are also
 available in Adobe Type 1 format. Support under LaTeX is
 provided by the wasysym package.
 
-%pre
-    %_texmf_mktexlsr_pre
-
 %post
-    %_texmf_mktexlsr_post
-
-%preun
-    if [ $1 -eq 0 ]; then
-	%_texmf_mktexlsr_pre
-    fi
+    %{_sbindir}/texlive.post
 
 %postun
     if [ $1 -eq 0 ]; then
-	%_texmf_mktexlsr_post
+	%{_sbindir}/texlive.post
     fi
 
 #-----------------------------------------------------------------------
@@ -89,7 +79,6 @@ provided by the wasysym package.
 %doc %{_texmfdistdir}/doc/fonts/wasy/wasydoc.pdf
 %doc %{_texmfdistdir}/doc/fonts/wasy/wasydoc.tex
 %doc %{_texmfdistdir}/doc/fonts/wasy/wasyfont.2
-%doc %{_tlpkgobjdir}/*.tlpobj
 
 #-----------------------------------------------------------------------
 %prep
@@ -100,5 +89,3 @@ provided by the wasysym package.
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
 cp -fpar fonts tex doc %{buildroot}%{_texmfdistdir}
-mkdir -p %{buildroot}%{_tlpkgobjdir}
-cp -fpa tlpkg/tlpobj/*.tlpobj %{buildroot}%{_tlpkgobjdir}
