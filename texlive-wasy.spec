@@ -89,3 +89,16 @@ provided by the wasysym package.
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
 cp -fpar fonts tex doc %{buildroot}%{_texmfdistdir}
+
+
+%changelog
+* Thu Jan 05 2012 Paulo Andrade <pcpa@mandriva.com.br> 20060912-2
++ Revision: 757500
+- Rebuild to reduce used resources
+
+* Sat Nov 05 2011 Paulo Andrade <pcpa@mandriva.com.br> 20060912-1
++ Revision: 719904
+- texlive-wasy
+- texlive-wasy
+- texlive-wasy
+
