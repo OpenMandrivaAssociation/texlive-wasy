@@ -6,7 +6,7 @@
 # catalog-version undef
 Name:		texlive-wasy
 Version:	20060912
-Release:	9
+Release:	10
 Summary:	The wasy fonts (Waldi symbol fonts)
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/fonts/wasy2
