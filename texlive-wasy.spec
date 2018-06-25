@@ -1,5 +1,5 @@
 Name:		texlive-wasy
-Version:	20170414
+Version:	20180303
 Release:	1
 Summary:	The wasy fonts (Waldi symbol fonts)
 Group:		Publishing
