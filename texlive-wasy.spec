@@ -1,6 +1,6 @@
 Name:		texlive-wasy
 Version:	20180303
-Release:	1
+Release:	2
 Summary:	The wasy fonts (Waldi symbol fonts)
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/fonts/wasy2
