@@ -3,7 +3,7 @@ Version:	53533
 Release:	2
 Summary:	The wasy fonts (Waldi symbol fonts)
 Group:		Publishing
-URL:		http://www.ctan.org/tex-archive/fonts/wasy2
+URL:		https://www.ctan.org/tex-archive/fonts/wasy2
 License:	PD
 Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/wasy.r%{version}.tar.xz
 Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/wasy.doc.r%{version}.tar.xz
